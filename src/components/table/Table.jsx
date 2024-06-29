@@ -7,7 +7,7 @@ import eth from '../../img/coins/eth.png'
 import matic from '../../img/coins/matic.png'
 import axios from 'axios'
 
-const Table = () => {
+const  Table = () => {
     const [data, setData] = useState([]);
 
     const fetchData = async () => {
@@ -82,7 +82,7 @@ const Table = () => {
                 return (
                     <tr key={data.asset}>
                         <th className='px-[24px] py-[20px]'>
-                            <div className='flex items-center gap-[20px]'>
+                            <div className='flex items-center gap-[20px] min-w-64'>
                                 <img src={data.logo}/>
                                 <div className='flex gap-[8px] items-center'>
                                     <p className='font-medium text-[20px] text-[#C7E1FF]'>{data.asset}</p>
@@ -90,16 +90,16 @@ const Table = () => {
                                 </div>
                             </div>
                         </th>
-                        <th className='px-[24px] py-[20px]'>
+                        <th className='px-[24px] py-[20px] min-w-36'>
                             <p className='font-normal font-[16px] text-[#C7E1FF]'>$ {data.price}</p>
                         </th>
-                        <th className='px-[24px] py-[20px]'>
+                        <th className='px-[24px] py-[20px] min-w-24'>
                             <p className={`font-normal font-[16px] ${data.change > 0 ? 'text-[#58F0A7]' : 'text-[#F94B55]'}`}>{data.change} %</p>
                         </th>
-                        <th className='px-[24px] py-[20px]'>
+                        <th className='px-[24px] py-[20px] min-w-24'>
                             <p className='font-normal font-[16px] text-[#C7E1FF]'>{data.volume}</p>
                         </th>
-                        <th className='px-[24px] py-[20px]'>
+                        <th className='px-[24px] py-[20px] min-w-24'>
                             <button className='px-[16px] py-[6px] border border-[#2FBDFC] rounded-[6px] text-[#2FBDFC] hover:text-white hover:bg-[#2FBDFC] transition-all'>Trade</button>
                         </th>
                     </tr>

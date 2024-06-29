@@ -7,3 +7,20 @@
     font-family: "Inter", sans-serif;
 }
 
+.ant-drawer-content{
+    background: #080A0C !important;
+}
+
+.ant-drawer-close{
+    color: #D0E8FF !important;
+}
+
+.ant-drawer-close:hover{
+    color: white !important;
+}
+
+@media (max-width: 1660px) {
+    .statistics{
+        display: none;
+    }
+}

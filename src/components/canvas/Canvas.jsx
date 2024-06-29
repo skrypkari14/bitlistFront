@@ -71,7 +71,7 @@ const Canvas = props => {
       ctx.lineWidth = 2; // Line width
       ctx.stroke();
 
-      ctx.font = '12px Inter';
+      ctx.font = '12px Arial';
       ctx.fillStyle = '#9BB5CE'; // Text color
       ctx.textAlign = 'center'; // Text alignment
       ctx.textBaseline = 'middle'; // Text baseline
@@ -193,7 +193,7 @@ const Canvas = props => {
       ctx.fillStyle = '#5FB1FA';
       ctx.fillRect(324, 148, 28, 76); 
 
-      // Who read this is GOMOSEC
+      // 
 
       ctx.fillStyle = '#5FFA9D';
       ctx.fillRect(382, 44, 28, 10); 
