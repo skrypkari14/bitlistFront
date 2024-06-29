@@ -12,7 +12,7 @@ const  Table = () => {
 
     const fetchData = async () => {
         try {
-          const response = await axios.get('http://localhost:4000/crypto-prices');
+          const response = await axios.get('https://bitlist-proxy.vercel.app/crypto-prices');
           const cryptos = response.data.data;
           const relevantCryptos = cryptos.filter(crypto =>
             ['bitcoin', 'ethereum', '1inch', 'polygon', 'binance-coin', 'binance-usd'].includes(crypto.id)
